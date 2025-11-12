@@ -32,13 +32,8 @@ class Animator:
                         img = img.resize((64, 64), Image.NEAREST)  # keep pixel crisp
                         frames.append(ImageTk.PhotoImage(img))
                 animations[state_name] = frames
-                
-        print("Loaded animations:", animations.keys())
         return animations
         
-        
-
-
     def update_frame(self):
         state = self.state_manager.get_state()
 
@@ -60,3 +55,4 @@ class Animator:
             self.state_manager.app_ref.speech.show("Pat pat 😺💗")
         except:
             pass
+                        
