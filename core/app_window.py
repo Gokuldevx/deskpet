@@ -9,8 +9,7 @@ class AppWindow:
     def __init__(self):
         self.root = ttk.Window(themename="cosmo")
         self.root.title("Desk Pet")
-        self.root.geometry("150x170")  # width x height
-
+        self.root.geometry("150x170") 
 
         self.state_manager = StateManager()
         self.state_manager.app_ref = self
@@ -38,4 +37,4 @@ class AppWindow:
     def run(self):
         self.animator.update_frame()
         self.root.mainloop()
-      
+        
